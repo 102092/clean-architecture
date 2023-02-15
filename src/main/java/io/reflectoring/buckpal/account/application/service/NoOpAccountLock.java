@@ -9,12 +9,12 @@ class NoOpAccountLock implements AccountLock {
 
 	@Override
 	public void lockAccount(AccountId accountId) {
-		// do nothing
+		// redis
 	}
 
 	@Override
 	public void releaseAccount(AccountId accountId) {
-		// do nothing
+		// redis or something else..
 	}
 
 }
