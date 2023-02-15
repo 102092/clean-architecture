@@ -26,6 +26,7 @@ public class SendMoneyService implements SendMoneyUseCase {
 	@Override
 	public boolean sendMoney(SendMoneyCommand command) {
 
+        // 입력 유효성 검사 시작
 		checkThreshold(command);
 
 		LocalDateTime baselineDate = LocalDateTime.now().minusDays(10);
